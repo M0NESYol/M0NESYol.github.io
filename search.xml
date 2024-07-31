@@ -408,7 +408,7 @@ double c=(double)a/100;
     <title>Graph Theory</title>
     <url>/2024/06/27/Graph%20Theory/</url>
     <content><![CDATA[<blockquote>
-<center><font size="4">“万象神宫?!!!”</font></center>
+<center><font size="4">“万象神宫”</font></center>
 </blockquote>
 <span id="more"></span>
 <h2 id="求有向图中的字典序最小的最长路径"><a href="#求有向图中的字典序最小的最长路径" class="headerlink" title="求有向图中的字典序最小的最长路径"></a>求有向图中的字典序最小的最长路径</h2><ul>
@@ -470,7 +470,10 @@ double c=(double)a/100;
   <entry>
     <title>Math</title>
     <url>/2021/11/24/Math/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<blockquote>
+<center><font size="4">“LikeMath!”</font></center>
+</blockquote>
+<span id="more"></span>
 <h2 id="整除分块"><a href="#整除分块" class="headerlink" title="整除分块"></a>整除分块</h2><p>整除分块是用于快速处理形似 $\sum _{i=1}^{n}⌊k/i⌋$的式子。</p>
 <p>o(n)的方法显然大家都会，但是当数据量较大时就有点乏力了，因此需要优化。<br>令n=5，sum=5+2+1+1+1，可以发现，对于单一的$⌊k/i⌋$，某些地方的值是相同的，并且呈块状分布。</p>
 <p>而对于一个块，假设它的起始位置的下标为l，那么该块的结束位置的下标为$⌊k⌊k/l⌋⌋$</p>
@@ -984,7 +987,10 @@ double c=(double)a/100;
   <entry>
     <title>汉诺塔</title>
     <url>/2022/02/08/%E6%B1%89%E8%AF%BA%E5%A1%94/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<blockquote>
+<center><font size="4">“那就浅浅入门一下吧”</font></center>
+</blockquote>
+<span id="more"></span>
 <h2 id="汉诺塔问题分析"><a href="#汉诺塔问题分析" class="headerlink" title="汉诺塔问题分析"></a>汉诺塔问题分析</h2><p><img src="/images/loading.png" data-original="/2022/02/08/%E6%B1%89%E8%AF%BA%E5%A1%94/%E6%B1%89%E8%AF%BA%E5%A1%94.png" alt="汉诺塔"><br>1个盘子：直接移动， “N==1”是递归终结条件。<br>N个盘子：吧移动N个盘子的问题转化为移动N-1盘子的问题。<br>递归解决：<br>(1)把A上面的N-1个盘子移动B（借助C）；<br>(2)把第N个盘子一道C；<br>(3)把B上的N-1个盘子移到C（借助A）<br>结论：n个盘子需要移动2^n-1次便能转移完成</p>
 <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">int</span> cnt=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">hannuo</span><span class="params">(<span class="keyword">int</span> num,<span class="keyword">int</span> src,<span class="keyword">int</span> tmp,<span class="keyword">int</span> dst)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(num==<span class="number">1</span>) </span><br><span class="line">	&#123;</span><br><span class="line">		cnt++;</span><br><span class="line">		cout&lt;&lt;src&lt;&lt;<span class="string">&quot;------&gt;&quot;</span>&lt;&lt;dst&lt;&lt;endl;</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">hannuo</span>( num<span class="number">-1</span>, src,dst,tmp);</span><br><span class="line">	    cout&lt;&lt;src&lt;&lt;<span class="string">&quot;------&gt;&quot;</span>&lt;&lt;dst&lt;&lt;endl;</span><br><span class="line">	    cnt++;</span><br><span class="line">	    <span class="built_in">hannuo</span>( num<span class="number">-1</span>, tmp, src, dst);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">hannuo</span>(<span class="number">5</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>);</span><br><span class="line">    cout&lt;&lt;cnt&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
@@ -997,7 +1003,10 @@ double c=(double)a/100;
   <entry>
     <title>日常笔记</title>
     <url>/2022/01/07/%E7%9F%A5%E8%AF%86%E7%82%B9%E9%80%9F%E8%AE%B0/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<blockquote>
+<center><font size="4">“Just Take Notes”</font></center>
+</blockquote>
+<span id="more"></span>
 <h2 id="质数的大致数量范围"><a href="#质数的大致数量范围" class="headerlink" title="质数的大致数量范围"></a>质数的大致数量范围</h2><ul>
 <li>50000以内的质数共5133个</li>
 </ul>
@@ -1044,7 +1053,11 @@ double c=(double)a/100;
   <entry>
     <title>蓝桥杯训练</title>
     <url>/2022/02/08/%E8%93%9D%E6%A1%A5%E6%9D%AF%E8%AE%AD%E7%BB%83/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<blockquote>
+<center><font size="4">“显然，这是用来训练蓝桥杯的...”</font></center>
+</blockquote>
+<span id="more"></span>
+
 
 <h2 id="垒骰子"><a href="#垒骰子" class="headerlink" title="垒骰子"></a>垒骰子</h2><ul>
 <li>题意：赌圣atm晚年迷恋上了垒骰子，就是把骰子一个垒在另一个上边，不能歪歪扭扭，要垒成方柱体。<br>经过长期观察，atm 发现了稳定骰子的奥秘：有些数字的面贴着会互相排斥！<br>我们先来规范一下骰子：1 的对面是 4，2 的对面是 5，3 的对面是 6。<br>假设有 m 组互斥现象，每组中的那两个数字的面紧贴在一起，骰子就不能稳定的垒起来。<br>atm想计算一下有多少种不同的可能的垒骰子方式。<br>两种垒骰子方式相同，当且仅当这两种方式中对应高度的骰子的对应数字的朝向都相同。<br>由于方案数可能过多，请输出模 10^9 + 7 的结果。</li>
@@ -1059,7 +1072,7 @@ double c=(double)a/100;
 <li>思路：按照一般的思路，四个循环分别枚举a，b，c，d即可，但是显然时间复杂度不允许；因此可以分开计算a * a+b * b 与 c * c+d * d，这样时间复杂度大大降低。</li>
 <li>方法：先求出所有可能的a * a+b * b的值存入map中，此时再枚举c，d，查看map中有无map[n-a * a-b * b]即可，存在即输出，不存在就跳过往下找。</li>
 </ul>
-<h2 id="剪邮票"><a href="#剪邮票" class="headerlink" title="剪邮票"></a>剪邮票</h2><p>题意：<img src="/images/loading.png" data-original="E:\blog\betblog\source_posts\蓝桥杯训练\剪邮票.png" alt="image-20220407102341084"></p>
+<h2 id="剪邮票"><a href="#剪邮票" class="headerlink" title="剪邮票"></a>剪邮票</h2><p>题意：<img src="/images/loading.png" data-original="/2022/02/08/%E8%93%9D%E6%A1%A5%E6%9D%AF%E8%AE%AD%E7%BB%83/blog\betblog\source_posts\蓝桥杯训练\剪邮票.png" alt="image-20220407102341084"></p>
 <ul>
 <li>思路：由于数据量并不是很大，因此可以想到枚举检验的方式，那么便需要从12个数中任意选取5个数所有的方案中进行验证，并判断这五个数是否连续即可；从12个数中任取5个的枚举方式可以选择next_permutation()函数，先在数组中从小到大存储7个0以及5个1，这时候在这12个数进行全排列的过程中即能够覆盖所有选取五个数的情况，这时候在进行验证即可；验证可以采取判断是否只有一个连通通块的方式验证，枚举12个起始点，从标记为1的数字开始dfs，将搜到的点标记为0，跑完之后cnt++，即得到一个连通块，最后判断连通块的个数即可。</li>
 </ul>
@@ -1159,7 +1172,10 @@ double c=(double)a/100;
   <entry>
     <title>点分治</title>
     <url>/2021/11/26/%E7%82%B9%E5%88%86%E6%B2%BB/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<blockquote>
+<center><font size="4">“你觉得你会《淀粉质》吗？”</font></center>
+</blockquote>
+<span id="more"></span>
 <h2 id="点分治前置知识"><a href="#点分治前置知识" class="headerlink" title="点分治前置知识"></a>点分治前置知识</h2><ol>
 <li><p>点分治的基本思想</p>
 <pre><code> 点分治，顾名思义就是基于树上的节点进行分治。
