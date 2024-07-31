@@ -1059,7 +1059,7 @@ double c=(double)a/100;
 <li>思路：按照一般的思路，四个循环分别枚举a，b，c，d即可，但是显然时间复杂度不允许；因此可以分开计算a * a+b * b 与 c * c+d * d，这样时间复杂度大大降低。</li>
 <li>方法：先求出所有可能的a * a+b * b的值存入map中，此时再枚举c，d，查看map中有无map[n-a * a-b * b]即可，存在即输出，不存在就跳过往下找。</li>
 </ul>
-<h2 id="剪邮票"><a href="#剪邮票" class="headerlink" title="剪邮票"></a>剪邮票</h2><p>题意：<img src="/images/loading.png" data-original="/2022/02/08/%E8%93%9D%E6%A1%A5%E6%9D%AF%E8%AE%AD%E7%BB%83/blog\betblog\source_posts\蓝桥杯训练\剪邮票.png" alt="image-20220407102341084"></p>
+<h2 id="剪邮票"><a href="#剪邮票" class="headerlink" title="剪邮票"></a>剪邮票</h2><p>题意：<img src="/images/loading.png" data-original="E:\blog\betblog\source_posts\蓝桥杯训练\剪邮票.png" alt="image-20220407102341084"></p>
 <ul>
 <li>思路：由于数据量并不是很大，因此可以想到枚举检验的方式，那么便需要从12个数中任意选取5个数所有的方案中进行验证，并判断这五个数是否连续即可；从12个数中任取5个的枚举方式可以选择next_permutation()函数，先在数组中从小到大存储7个0以及5个1，这时候在这12个数进行全排列的过程中即能够覆盖所有选取五个数的情况，这时候在进行验证即可；验证可以采取判断是否只有一个连通通块的方式验证，枚举12个起始点，从标记为1的数字开始dfs，将搜到的点标记为0，跑完之后cnt++，即得到一个连通块，最后判断连通块的个数即可。</li>
 </ul>
