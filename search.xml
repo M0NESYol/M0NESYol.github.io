@@ -759,7 +759,10 @@ double c=(double)a/100;
   <entry>
     <title>markdown语法</title>
     <url>/2021/09/07/markdown/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<blockquote>
+<center><font size="4">“啥也没有的Markdown”</font></center>
+</blockquote>
+<span id="more"></span>
 <h2 id="公式编辑"><a href="#公式编辑" class="headerlink" title="公式编辑"></a>公式编辑</h2><p><a href="https://www.jianshu.com/p/25f0139637b7">公式编辑</a></p>
 ]]></content>
       <categories>
